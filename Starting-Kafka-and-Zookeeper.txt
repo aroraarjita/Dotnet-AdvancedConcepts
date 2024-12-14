@@ -1,0 +1,12 @@
+1. Open the command prompt. Navigate to the directory where kafka is placed-
+
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+2. Open the command prompt.Navigate to the directory where Kafka is placed-
+
+.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+3. Open the command prompt and check the messages-
+
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic chat-message --from-beginning
+
